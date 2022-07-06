@@ -5,6 +5,7 @@ import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Brand from "./components/Brand";
+import Portofolio from "./components/Portofolio";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Hero />
       <Brand />
+      <Portofolio />
       <div style={{ height: "2000px" }}></div>
     </div>
   );
