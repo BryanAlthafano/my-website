@@ -44,6 +44,28 @@ const NavMobile = () => {
     },
   ];
 
+  const navClick = (nav_key) => {
+    if (nav_key == "Home") {
+      window.scrollTo(0, 0);
+      setIsOpen(false);
+    }
+
+    if (nav_key == "About") {
+      window.scrollTo(0, 300);
+      setIsOpen(false);
+    }
+
+    if (nav_key == "Portofolio") {
+      window.scrollTo(0, 1100);
+      setIsOpen(false);
+    }
+
+    if (nav_key == "Contact") {
+      window.scrollTo(0, 3500);
+      setIsOpen(false);
+    }
+  };
+
   return (
     <nav className="relative">
       <div
@@ -80,7 +102,7 @@ const NavMobile = () => {
           return (
             <li key={index} className="mb-6">
               <Link
-                to={item.href}
+                onClick={() => navClick(item.name)}
                 smooth={true}
                 duration={500}
                 offset={-70}

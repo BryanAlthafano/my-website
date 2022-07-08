@@ -24,6 +24,24 @@ const Nav = () => {
       name: "Contact",
     },
   ];
+
+  const navClick = (nav_key) => {
+    if (nav_key == "Home") {
+      window.scrollTo(0, 0);
+    }
+
+    if (nav_key == "About") {
+      window.scrollTo(0, 500);
+    }
+
+    if (nav_key == "Portofolio") {
+      window.scrollTo(0, 1300);
+    }
+
+    if (nav_key == "Contact") {
+      window.scrollTo(0, 2300);
+    }
+  };
   return (
     <nav>
       <ul className="flex space-x-8 capitalize text-[15px]">
@@ -36,7 +54,7 @@ const Nav = () => {
               key={index}
             >
               <Link
-                to={item.href}
+                onClick={() => navClick(item.name)}
                 activeClass="active"
                 spy={true}
                 smooth={true}

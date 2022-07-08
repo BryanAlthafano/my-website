@@ -34,12 +34,12 @@ const Portofolio = () => {
         <div className="flex text-white text-center font-bold text-lg justify-center md:text-xl lg:text-3xl">
           Portofolio
         </div>
-        <div className="flex my-8 px-4 justify-center flex-col gap-5 md:flex-row flex-nowrap ">
+        <div className="flex my-8 px-4 justify-center  gap-5 lg:flex-row flex-wrap ">
           {/* box */}
           {portofolioApps.map((item, index) => {
             return (
               <div
-                className="rounded-md bg-white px-5 py-5 flex-col min-w-[300px] hover:scale-105"
+                className="rounded-md bg-primaryBlue px-5 py-5 flex-col max-w-[300px] hover:scale-105 shadow-sm shadow-slate-500 hover:shadow-none"
                 key={index}
               >
                 <div>
@@ -52,7 +52,7 @@ const Portofolio = () => {
                 <div className="text-primary  font-bold text-xl pt-3">
                   {item.name}
                 </div>
-                <div className="text-gray-600  font-normal text-base  text-justify">
+                <div className="text-gray-400  font-normal text-base  text-justify">
                   {item.description}
                 </div>
               </div>

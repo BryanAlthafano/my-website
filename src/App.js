@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Brand from "./components/Brand";
 import Portofolio from "./components/Portofolio";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Hero />
       <Brand />
       <Portofolio />
-      <div style={{ height: "2000px" }}></div>
+      <About />
     </div>
   );
 };
